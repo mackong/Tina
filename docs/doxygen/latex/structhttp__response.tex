@@ -1,0 +1,92 @@
+\hypertarget{structhttp__response}{
+\section{http\_\-response Struct Reference}
+\label{structhttp__response}\index{http\_\-response@{http\_\-response}}
+}
+
+
+{\ttfamily \#include $<$response.h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{structhttp__response_a598a52db98b15ced51745423dca1a61a}{version}
+\item 
+int \hyperlink{structhttp__response_a2832d0ec07aa88fbf6e4136014bae003}{status\_\-code}
+\item 
+char $\ast$ \hyperlink{structhttp__response_a7ba51c31f4fa16f868bbfb2448d1b061}{status\_\-msg}
+\item 
+char $\ast$ \hyperlink{structhttp__response_a6eda538dab467a94b48813a6ea424e62}{req\_\-uri}
+\item 
+char $\ast$ \hyperlink{structhttp__response_aa39db72fcbd5259b1a8de73b7ce46b47}{decoded\_\-uri}
+\item 
+struct http\_\-header\_\-head $\ast$ \hyperlink{structhttp__response_a5f7a1145407d477dd6e1f7a65a3dc60f}{headers}
+\item 
+struct \hyperlink{structevbuffer}{evbuffer} $\ast$ \hyperlink{structhttp__response_ae6bece88a820ee5637ccd2fa7d4b76d4}{body\_\-buf}
+\item 
+int \hyperlink{structhttp__response_abab20709a27b924ae24eb6e6b03561cc}{type}
+\item 
+struct \hyperlink{structhttp__request}{http\_\-request} $\ast$ \hyperlink{structhttp__response_af09ef4d96665428d0499b1c4679f5f9a}{hrequest}
+\item 
+struct \hyperlink{structhttp__server}{http\_\-server} $\ast$ \hyperlink{structhttp__response_a762a56e397857a5f649ad151474daad5}{hserver}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+http response 
+
+\subsection{Member Data Documentation}
+\hypertarget{structhttp__response_ae6bece88a820ee5637ccd2fa7d4b76d4}{
+\index{http\_\-response@{http\_\-response}!body\_\-buf@{body\_\-buf}}
+\index{body\_\-buf@{body\_\-buf}!http_response@{http\_\-response}}
+\subsubsection[{body\_\-buf}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf evbuffer}$\ast$ {\bf http\_\-response::body\_\-buf}}}
+\label{structhttp__response_ae6bece88a820ee5637ccd2fa7d4b76d4}
+response body \hypertarget{structhttp__response_aa39db72fcbd5259b1a8de73b7ce46b47}{
+\index{http\_\-response@{http\_\-response}!decoded\_\-uri@{decoded\_\-uri}}
+\index{decoded\_\-uri@{decoded\_\-uri}!http_response@{http\_\-response}}
+\subsubsection[{decoded\_\-uri}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-response::decoded\_\-uri}}}
+\label{structhttp__response_aa39db72fcbd5259b1a8de73b7ce46b47}
+decoded absolute uri path for request uri \hypertarget{structhttp__response_a5f7a1145407d477dd6e1f7a65a3dc60f}{
+\index{http\_\-response@{http\_\-response}!headers@{headers}}
+\index{headers@{headers}!http_response@{http\_\-response}}
+\subsubsection[{headers}]{\setlength{\rightskip}{0pt plus 5cm}struct http\_\-header\_\-head$\ast$ {\bf http\_\-response::headers}}}
+\label{structhttp__response_a5f7a1145407d477dd6e1f7a65a3dc60f}
+response header \hypertarget{structhttp__response_af09ef4d96665428d0499b1c4679f5f9a}{
+\index{http\_\-response@{http\_\-response}!hrequest@{hrequest}}
+\index{hrequest@{hrequest}!http_response@{http\_\-response}}
+\subsubsection[{hrequest}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf http\_\-request}$\ast$ {\bf http\_\-response::hrequest}}}
+\label{structhttp__response_af09ef4d96665428d0499b1c4679f5f9a}
+the http request,this is used for internal \hypertarget{structhttp__response_a762a56e397857a5f649ad151474daad5}{
+\index{http\_\-response@{http\_\-response}!hserver@{hserver}}
+\index{hserver@{hserver}!http_response@{http\_\-response}}
+\subsubsection[{hserver}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf http\_\-server}$\ast$ {\bf http\_\-response::hserver}}}
+\label{structhttp__response_a762a56e397857a5f649ad151474daad5}
+the http server,this is used for internal \hypertarget{structhttp__response_a6eda538dab467a94b48813a6ea424e62}{
+\index{http\_\-response@{http\_\-response}!req\_\-uri@{req\_\-uri}}
+\index{req\_\-uri@{req\_\-uri}!http_response@{http\_\-response}}
+\subsubsection[{req\_\-uri}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-response::req\_\-uri}}}
+\label{structhttp__response_a6eda538dab467a94b48813a6ea424e62}
+the request uri \hypertarget{structhttp__response_a2832d0ec07aa88fbf6e4136014bae003}{
+\index{http\_\-response@{http\_\-response}!status\_\-code@{status\_\-code}}
+\index{status\_\-code@{status\_\-code}!http_response@{http\_\-response}}
+\subsubsection[{status\_\-code}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf http\_\-response::status\_\-code}}}
+\label{structhttp__response_a2832d0ec07aa88fbf6e4136014bae003}
+status code \hypertarget{structhttp__response_a7ba51c31f4fa16f868bbfb2448d1b061}{
+\index{http\_\-response@{http\_\-response}!status\_\-msg@{status\_\-msg}}
+\index{status\_\-msg@{status\_\-msg}!http_response@{http\_\-response}}
+\subsubsection[{status\_\-msg}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-response::status\_\-msg}}}
+\label{structhttp__response_a7ba51c31f4fa16f868bbfb2448d1b061}
+status message \hypertarget{structhttp__response_abab20709a27b924ae24eb6e6b03561cc}{
+\index{http\_\-response@{http\_\-response}!type@{type}}
+\index{type@{type}!http_response@{http\_\-response}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf http\_\-response::type}}}
+\label{structhttp__response_abab20709a27b924ae24eb6e6b03561cc}
+response type ,0 for static ,1 for dynamic,this is used for internal \hypertarget{structhttp__response_a598a52db98b15ced51745423dca1a61a}{
+\index{http\_\-response@{http\_\-response}!version@{version}}
+\index{version@{version}!http_response@{http\_\-response}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-response::version}}}
+\label{structhttp__response_a598a52db98b15ced51745423dca1a61a}
+http version HTTP/x.x 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+response.h\end{DoxyCompactItemize}

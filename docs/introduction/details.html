@@ -1,0 +1,110 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Tina Documentation</title>
+</head>
+
+<body>
+<h1>Tina Documentation</h1>
+In this document: 
+<ul>
+  <li><a href="#install">Installation and Usage</a> </li>
+  <li><a href="#bugs">Possible bugs</a> </li>
+</ul>
+<hr />
+
+<h2><a name="install">Installation and Usage</a></h2>
+
+<p>Tina is currently being developed and tested on Linux/i386. </p>
+
+<p>It should be very simple to install and use Tina: </p>
+<ol>
+  <li><strong>Unpack</strong> 
+    <ol>
+      <li>Choose, and cd into, a convenient directory for the package. </li>
+      <li>type <code>"tar -xvzf tina-0.1.0.tar.gz"</code> to unpack the
+      package.</li>
+      <li>Read the documentation. Really. </li>
+    </ol>
+  </li>
+  <li><strong>Build</strong> 
+    <ol>
+      <li>If you don't have gcc installed, adjust the definitions for CC near
+        the top of src/Makefile. </li>
+      <li>(optional) Change the default config by setting the #define in
+        src/config.h.</li>
+      <li>(optional) Add your own mime type to the end of mime_types.txt if you
+        really know what you at doing.</li>
+      <li>type <code>"make"</code>. Report any errors to me for resolution, or
+        strike out on your own.</li>
+    </ol>
+  </li>
+  <li><strong>Install</strong> 
+    <ul>
+      <li>If build success,then type <code>"sudo make install"</code> to
+        install Tina.</li>
+    </ul>
+  </li>
+  <li><strong>Configure</strong> 
+    <ol>
+      <li>The config file for Tina is <code>"/etc/tina/tina.conf".</code></li>
+      <li>Edit <code>"/etc/tina/tina.conf"</code> according to your choices .
+        Read through this file to see what other features you can
+      configure.</li>
+      <li>The default root ducument for tina is <code>"/var/tina/www"</code>,so
+        if you don't modify the config,you must create this directory by your
+        self.just type <code>"sudo mkdir -p /var/tina/www"</code> to create
+      it.</li>
+      <li>The default index page for tina is <code>"index.html"</code> which
+        you can find it in <code>"conf/"</code>,if you don't modify the default
+        config,you should copy this file or any other file named
+        <code>"index.html"</code> into root document which is
+        <code>"/var/tina/www"</code> by type <code>"sudo cp conf/index.html
+        /var/tina/www"</code>.because the <code>"index.html"</code> needs
+        <code>"logo.png"</code>,so you should copy the <code>"logo.png"</code>
+        which is in <code>"conf/"</code> into the <code>"/var/tina/www"</code>
+        by type <code>"sudo cp conf/logo.png /var/tina/www"</code> also.</li>
+      <li>(optional)There are some simple CGI program in the <code>"cgi-bin/"</code>,you can
+        copy them into the root document,by type <code>"sudo cp -r cgi-bin /var/tina/www"</code>.
+      </li>
+      <li>Type <code>"sudo update-rc.d tinad defaults"</code> to make tina to
+        be a serice.Default tina service is not start. </li>
+    </ol>
+  </li>
+  <li><strong>Start</strong> 
+    <ul>
+      <li>To start tina,you just need type <code>"sudo service tinad
+        start"</code>.if no error,it's all ok. </li>
+    </ul>
+  </li>
+  <li><strong>Test</strong> 
+    <ul>
+      <li>At this point the server should run and serve documents. If not,
+        check the log file in the root document
+        <code>"/var/tina/www/log/tina.log"</code>.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>I realize this isn't exactly comprehensive documentation.</p>
+
+<h2><a name="bugs">Bugs</a></h2>
+<ul>
+  <li><strong>Crash when F5 is pressed for a comment</strong>.<br>
+    In chrome or other explorer,if F5 is pressed for a comment to refresh the
+    page,then the Tina server may crash. </li>
+  <li><strong>ERR_EMPTY_RESPONSE when F5 is pressed for a comment.</strong><br>
+    In chrome. if F5 is pressed for a comment to refresh the page,then the
+    explorer may get a ERR_EMPTY_RESPONSE error.</li>
+  <li><strong>Encoding error for request url.</strong><br>
+    In the request url,if there are "%xx" string,then Tina will decode it.so if
+    you have a file named <code>"file%20.txt"</code>,then the url
+    <code>"xxx.xxx.xxx.xxx/file%20.txt"</code> will get a 404(Not Found)
+    response,because the "%20" will be decode into a <code>"space"</code>. </li>
+</ul>
+<hr>
+Last update: 18 May, 2012 
+
+<p><a href="mailto:mackonghp@gmail.com">MacKong</a> </p>
+</body>
+</html>

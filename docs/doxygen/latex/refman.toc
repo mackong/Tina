@@ -1,0 +1,56 @@
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Class Documentation}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}evbuffer Struct Reference}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}http\_\discretionary {-}{}{}header Struct Reference}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Detailed Description}{4}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Member Function Documentation}{4}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}TAILQ\_\discretionary {-}{}{}ENTRY}{4}{subsubsection.2.2.2.1}
+\contentsline {subsection}{\numberline {2.2.3}Member Data Documentation}{4}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}name}{4}{subsubsection.2.2.3.1}
+\contentsline {subsubsection}{\numberline {2.2.3.2}value}{4}{subsubsection.2.2.3.2}
+\contentsline {section}{\numberline {2.3}http\_\discretionary {-}{}{}request Struct Reference}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Detailed Description}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Member Data Documentation}{5}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}cgi\_\discretionary {-}{}{}query\_\discretionary {-}{}{}string}{5}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}cgi\_\discretionary {-}{}{}script}{5}{subsubsection.2.3.2.2}
+\contentsline {subsubsection}{\numberline {2.3.2.3}headers}{5}{subsubsection.2.3.2.3}
+\contentsline {subsubsection}{\numberline {2.3.2.4}is\_\discretionary {-}{}{}cgi}{5}{subsubsection.2.3.2.4}
+\contentsline {subsubsection}{\numberline {2.3.2.5}method}{5}{subsubsection.2.3.2.5}
+\contentsline {subsubsection}{\numberline {2.3.2.6}uri}{5}{subsubsection.2.3.2.6}
+\contentsline {subsubsection}{\numberline {2.3.2.7}version}{6}{subsubsection.2.3.2.7}
+\contentsline {section}{\numberline {2.4}http\_\discretionary {-}{}{}response Struct Reference}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Detailed Description}{7}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Member Data Documentation}{7}{subsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2.1}body\_\discretionary {-}{}{}buf}{7}{subsubsection.2.4.2.1}
+\contentsline {subsubsection}{\numberline {2.4.2.2}decoded\_\discretionary {-}{}{}uri}{7}{subsubsection.2.4.2.2}
+\contentsline {subsubsection}{\numberline {2.4.2.3}headers}{7}{subsubsection.2.4.2.3}
+\contentsline {subsubsection}{\numberline {2.4.2.4}hrequest}{7}{subsubsection.2.4.2.4}
+\contentsline {subsubsection}{\numberline {2.4.2.5}hserver}{7}{subsubsection.2.4.2.5}
+\contentsline {subsubsection}{\numberline {2.4.2.6}req\_\discretionary {-}{}{}uri}{7}{subsubsection.2.4.2.6}
+\contentsline {subsubsection}{\numberline {2.4.2.7}status\_\discretionary {-}{}{}code}{8}{subsubsection.2.4.2.7}
+\contentsline {subsubsection}{\numberline {2.4.2.8}status\_\discretionary {-}{}{}msg}{8}{subsubsection.2.4.2.8}
+\contentsline {subsubsection}{\numberline {2.4.2.9}type}{8}{subsubsection.2.4.2.9}
+\contentsline {subsubsection}{\numberline {2.4.2.10}version}{8}{subsubsection.2.4.2.10}
+\contentsline {section}{\numberline {2.5}http\_\discretionary {-}{}{}server Struct Reference}{9}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Detailed Description}{9}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Member Data Documentation}{9}{subsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.2.1}cgi\_\discretionary {-}{}{}pattern}{9}{subsubsection.2.5.2.1}
+\contentsline {subsubsection}{\numberline {2.5.2.2}clients\_\discretionary {-}{}{}fd}{9}{subsubsection.2.5.2.2}
+\contentsline {subsubsection}{\numberline {2.5.2.3}connection\_\discretionary {-}{}{}timeout}{9}{subsubsection.2.5.2.3}
+\contentsline {subsubsection}{\numberline {2.5.2.4}default\_\discretionary {-}{}{}page}{9}{subsubsection.2.5.2.4}
+\contentsline {subsubsection}{\numberline {2.5.2.5}list\_\discretionary {-}{}{}directory}{9}{subsubsection.2.5.2.5}
+\contentsline {subsubsection}{\numberline {2.5.2.6}log\_\discretionary {-}{}{}file}{10}{subsubsection.2.5.2.6}
+\contentsline {subsubsection}{\numberline {2.5.2.7}max\_\discretionary {-}{}{}connection}{10}{subsubsection.2.5.2.7}
+\contentsline {subsubsection}{\numberline {2.5.2.8}read\_\discretionary {-}{}{}set}{10}{subsubsection.2.5.2.8}
+\contentsline {subsubsection}{\numberline {2.5.2.9}root\_\discretionary {-}{}{}document}{10}{subsubsection.2.5.2.9}
+\contentsline {subsubsection}{\numberline {2.5.2.10}server\_\discretionary {-}{}{}ip}{10}{subsubsection.2.5.2.10}
+\contentsline {subsubsection}{\numberline {2.5.2.11}server\_\discretionary {-}{}{}name}{10}{subsubsection.2.5.2.11}
+\contentsline {subsubsection}{\numberline {2.5.2.12}server\_\discretionary {-}{}{}port}{10}{subsubsection.2.5.2.12}
+\contentsline {subsubsection}{\numberline {2.5.2.13}sock\_\discretionary {-}{}{}fd}{10}{subsubsection.2.5.2.13}
+\contentsline {subsubsection}{\numberline {2.5.2.14}state}{10}{subsubsection.2.5.2.14}
+\contentsline {section}{\numberline {2.6}mime\_\discretionary {-}{}{}entry Struct Reference}{11}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Detailed Description}{11}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Member Data Documentation}{11}{subsection.2.6.2}
+\contentsline {subsubsection}{\numberline {2.6.2.1}ext}{11}{subsubsection.2.6.2.1}
+\contentsline {subsubsection}{\numberline {2.6.2.2}type}{11}{subsubsection.2.6.2.2}

@@ -1,0 +1,63 @@
+#!/bin/sh -e
+### BEGIN INIT INFO
+# Provides:				tina
+# Required-Start:		$local_fs $remote_fs
+# Required-Stop:		$local_fs $remote_fs
+# Should-Start:			
+# Should-Stop:			
+# Default-Start:		2 3 4 5
+# Default-Stop:			0 1 6
+# Short-Descriptions:		Start or stop the tina web server
+### END INIT INFO
+
+DAEMON="/usr/sbin/tina"
+CONFIG_FILE="/etc/tina/tina.conf"
+
+if [ ! -x "$DAEMON" ]
+then
+	echo "install tina first"
+	echo -e "[\033[44m FAIL \033[0m]"
+	exit 0
+fi
+
+if [ ! -e "$CONFIG_FILE" ]
+then
+	echo "please ensure the config file is exist"
+	echo -e "[\033[44m FAIL \033[0m]"
+	exit 0
+fi
+
+#[ -x "$DAEMON" ] || echo "install tina first";exit 0
+#[ -e "$CONFIG_FILE" ] || echo "please set config file";exit 0
+
+. /lib/lsb/init-functions
+
+
+case "$1" in
+	start)
+		start-stop-daemon --start --quiet --exec $DAEMON -- --config-file $CONFIG_FILE
+		echo "start tina service [\033[44mOK\033[0m]"
+		;;
+	stop)
+		start-stop-daemon --stop --quiet --pidfile /var/run/tina.pid --oknodo
+		echo "stop tina service [\033[44mOK\033[0m]"
+		;;
+	restart)
+		echo "restarting tina service ..."
+		echo "stop tina service"
+		start-stop-daemon --stop --quiet --pidfile /var/run/tina.pid --oknodo
+		sleep 1
+		echo "start tina service"
+		start-stop-daemon --start --quiet --exec $DAEMON -- --config-file $CONFIG_FILE
+		echo "restart tina service [\033[44mOK\033[0m]"
+		;;
+	status)
+		status_of_proc -p /var/run/tina.pid $DAEMON tina && exit 0 || exit $?
+		;;
+	*)
+		echo "Usage: /etc/init.d/tinad {start|stop|restart|status}"
+		exit 2
+		;;
+esac
+
+exit 0

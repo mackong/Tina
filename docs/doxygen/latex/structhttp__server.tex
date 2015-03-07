@@ -1,0 +1,125 @@
+\hypertarget{structhttp__server}{
+\section{http\_\-server Struct Reference}
+\label{structhttp__server}\index{http\_\-server@{http\_\-server}}
+}
+
+
+{\ttfamily \#include $<$server.h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{structhttp__server_afdeb11488dbc8aa350c3f7506ec65eba}{server\_\-name}
+\item 
+in\_\-addr\_\-t \hyperlink{structhttp__server_ad3110d5628168b14bcdcc7a7fed3f021}{server\_\-ip}
+\item 
+int \hyperlink{structhttp__server_a8f2e0f8f3c7919c65797bd2839723f45}{server\_\-port}
+\item 
+int \hyperlink{structhttp__server_a604db1118f08a81a5c7af5292ceafbae}{max\_\-connection}
+\item 
+char $\ast$ \hyperlink{structhttp__server_ab91aa6ac27175544a71f89764137ace9}{default\_\-page}
+\item 
+char $\ast$ \hyperlink{structhttp__server_ad1ae54cf82b2a45d41e0fd940cd55bd0}{cgi\_\-pattern}
+\item 
+char $\ast$ \hyperlink{structhttp__server_a25d2bb352f5d3fdd09ce7fbe266f6aac}{root\_\-document}
+\item 
+char $\ast$ \hyperlink{structhttp__server_aa0f74d26cdfb2eb7bd3160e29d3a1cd3}{log\_\-file}
+\item 
+int \hyperlink{structhttp__server_a2adef7772851f50f0058fa9cfc8f240d}{connection\_\-timeout}
+\item 
+int \hyperlink{structhttp__server_a6861735a5369b0f870027098e6a45add}{list\_\-directory}
+\item 
+volatile sig\_\-atomic\_\-t \hyperlink{structhttp__server_a8f13ce40020f68f463f426722c69f85d}{state}
+\item 
+int \hyperlink{structhttp__server_a206c0a97950f18794d7af217796eeb8d}{sock\_\-fd}
+\item 
+int \hyperlink{structhttp__server_ab5ad96c5f1ef00fc3ee2fbf9c344e536}{clients\_\-fd} \mbox{[}FD\_\-SETSIZE\mbox{]}
+\item 
+fd\_\-set \hyperlink{structhttp__server_a0ef8e756d2761544802490883444ea7e}{read\_\-set}
+\item 
+\hypertarget{structhttp__server_abbeaf899bb1eef2805d8859d6bb04d1d}{
+fd\_\-set {\bfseries all\_\-set}}
+\label{structhttp__server_abbeaf899bb1eef2805d8859d6bb04d1d}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+http server 
+
+\subsection{Member Data Documentation}
+\hypertarget{structhttp__server_ad1ae54cf82b2a45d41e0fd940cd55bd0}{
+\index{http\_\-server@{http\_\-server}!cgi\_\-pattern@{cgi\_\-pattern}}
+\index{cgi\_\-pattern@{cgi\_\-pattern}!http_server@{http\_\-server}}
+\subsubsection[{cgi\_\-pattern}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-server::cgi\_\-pattern}}}
+\label{structhttp__server_ad1ae54cf82b2a45d41e0fd940cd55bd0}
+cgi pattern \hypertarget{structhttp__server_ab5ad96c5f1ef00fc3ee2fbf9c344e536}{
+\index{http\_\-server@{http\_\-server}!clients\_\-fd@{clients\_\-fd}}
+\index{clients\_\-fd@{clients\_\-fd}!http_server@{http\_\-server}}
+\subsubsection[{clients\_\-fd}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf http\_\-server::clients\_\-fd}\mbox{[}FD\_\-SETSIZE\mbox{]}}}
+\label{structhttp__server_ab5ad96c5f1ef00fc3ee2fbf9c344e536}
+connected clients fd \hypertarget{structhttp__server_a2adef7772851f50f0058fa9cfc8f240d}{
+\index{http\_\-server@{http\_\-server}!connection\_\-timeout@{connection\_\-timeout}}
+\index{connection\_\-timeout@{connection\_\-timeout}!http_server@{http\_\-server}}
+\subsubsection[{connection\_\-timeout}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf http\_\-server::connection\_\-timeout}}}
+\label{structhttp__server_a2adef7772851f50f0058fa9cfc8f240d}
+connection timeout \hypertarget{structhttp__server_ab91aa6ac27175544a71f89764137ace9}{
+\index{http\_\-server@{http\_\-server}!default\_\-page@{default\_\-page}}
+\index{default\_\-page@{default\_\-page}!http_server@{http\_\-server}}
+\subsubsection[{default\_\-page}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-server::default\_\-page}}}
+\label{structhttp__server_ab91aa6ac27175544a71f89764137ace9}
+default page \hypertarget{structhttp__server_a6861735a5369b0f870027098e6a45add}{
+\index{http\_\-server@{http\_\-server}!list\_\-directory@{list\_\-directory}}
+\index{list\_\-directory@{list\_\-directory}!http_server@{http\_\-server}}
+\subsubsection[{list\_\-directory}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf http\_\-server::list\_\-directory}}}
+\label{structhttp__server_a6861735a5369b0f870027098e6a45add}
+list directory \hypertarget{structhttp__server_aa0f74d26cdfb2eb7bd3160e29d3a1cd3}{
+\index{http\_\-server@{http\_\-server}!log\_\-file@{log\_\-file}}
+\index{log\_\-file@{log\_\-file}!http_server@{http\_\-server}}
+\subsubsection[{log\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-server::log\_\-file}}}
+\label{structhttp__server_aa0f74d26cdfb2eb7bd3160e29d3a1cd3}
+log file \hypertarget{structhttp__server_a604db1118f08a81a5c7af5292ceafbae}{
+\index{http\_\-server@{http\_\-server}!max\_\-connection@{max\_\-connection}}
+\index{max\_\-connection@{max\_\-connection}!http_server@{http\_\-server}}
+\subsubsection[{max\_\-connection}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf http\_\-server::max\_\-connection}}}
+\label{structhttp__server_a604db1118f08a81a5c7af5292ceafbae}
+max connection \hypertarget{structhttp__server_a0ef8e756d2761544802490883444ea7e}{
+\index{http\_\-server@{http\_\-server}!read\_\-set@{read\_\-set}}
+\index{read\_\-set@{read\_\-set}!http_server@{http\_\-server}}
+\subsubsection[{read\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}fd\_\-set {\bf http\_\-server::read\_\-set}}}
+\label{structhttp__server_a0ef8e756d2761544802490883444ea7e}
+fd\_\-set \hypertarget{structhttp__server_a25d2bb352f5d3fdd09ce7fbe266f6aac}{
+\index{http\_\-server@{http\_\-server}!root\_\-document@{root\_\-document}}
+\index{root\_\-document@{root\_\-document}!http_server@{http\_\-server}}
+\subsubsection[{root\_\-document}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-server::root\_\-document}}}
+\label{structhttp__server_a25d2bb352f5d3fdd09ce7fbe266f6aac}
+root document \hypertarget{structhttp__server_ad3110d5628168b14bcdcc7a7fed3f021}{
+\index{http\_\-server@{http\_\-server}!server\_\-ip@{server\_\-ip}}
+\index{server\_\-ip@{server\_\-ip}!http_server@{http\_\-server}}
+\subsubsection[{server\_\-ip}]{\setlength{\rightskip}{0pt plus 5cm}in\_\-addr\_\-t {\bf http\_\-server::server\_\-ip}}}
+\label{structhttp__server_ad3110d5628168b14bcdcc7a7fed3f021}
+server ip \hypertarget{structhttp__server_afdeb11488dbc8aa350c3f7506ec65eba}{
+\index{http\_\-server@{http\_\-server}!server\_\-name@{server\_\-name}}
+\index{server\_\-name@{server\_\-name}!http_server@{http\_\-server}}
+\subsubsection[{server\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-server::server\_\-name}}}
+\label{structhttp__server_afdeb11488dbc8aa350c3f7506ec65eba}
+srever name \hypertarget{structhttp__server_a8f2e0f8f3c7919c65797bd2839723f45}{
+\index{http\_\-server@{http\_\-server}!server\_\-port@{server\_\-port}}
+\index{server\_\-port@{server\_\-port}!http_server@{http\_\-server}}
+\subsubsection[{server\_\-port}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf http\_\-server::server\_\-port}}}
+\label{structhttp__server_a8f2e0f8f3c7919c65797bd2839723f45}
+server port \hypertarget{structhttp__server_a206c0a97950f18794d7af217796eeb8d}{
+\index{http\_\-server@{http\_\-server}!sock\_\-fd@{sock\_\-fd}}
+\index{sock\_\-fd@{sock\_\-fd}!http_server@{http\_\-server}}
+\subsubsection[{sock\_\-fd}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf http\_\-server::sock\_\-fd}}}
+\label{structhttp__server_a206c0a97950f18794d7af217796eeb8d}
+socket fd \hypertarget{structhttp__server_a8f13ce40020f68f463f426722c69f85d}{
+\index{http\_\-server@{http\_\-server}!state@{state}}
+\index{state@{state}!http_server@{http\_\-server}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}volatile sig\_\-atomic\_\-t {\bf http\_\-server::state}}}
+\label{structhttp__server_a8f13ce40020f68f463f426722c69f85d}
+server state 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+server.h\end{DoxyCompactItemize}

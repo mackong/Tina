@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Tina web server</title>
+</head>
+
+<body style="margin-left:0;">
+<h1><span style="font-size: 26pt">Tina</span> <em><span
+style="font-size: 14pt">Tina is not apache</span></em></h1>
+<hr />
+
+<p>Welcome to Tina, a <strong>simple</strong> web server for
+<strong>linux</strong> computers. The current release is
+<strong>Tina-0.1.0</strong>. </p>
+
+<p>Tina is a <strong>single-tasking</strong> HTTP server. That means that
+unlike traditional web servers, it does not fork for each incoming connection,
+nor does it fork many copies of itself to handle multiple connections. It
+internally multiplexes all of the ongoing HTTP connections, and forks only for
+CGI programs (which must be separate processes.) </p>
+
+<p>Tina is not intended as a feature-packed server,it's implementation is
+simple.Tina uses the non-blocked <strong>select mode</strong> for clients'
+connection,and <strong>pthread</strong> for each process.The I/O process uses
+<strong>evbuffer</strong> from libevent,and <strong>fork</strong> for CGI
+program.</p>
+
+<p>Tina was created by <strong>MacKong</strong>(<a
+href="mailto:mackonghp@gmail.com">mackonghp@gmail.com</a>)</p>
+
+<h2>More information:</h2>
+<ul>
+  <li><a href="details.html#install">Installation and Usage</a> </li>
+  <li><a href="details.html#bugs">Possible bugs</a> </li>
+</ul>
+<hr />
+Last update: 17 May, 2012
+<br />
+<a href="mailto:mackonghp@gmail.com">MacKong</a> </body>
+</html>

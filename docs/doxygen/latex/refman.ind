@@ -1,0 +1,155 @@
+\begin{theindex}
+
+  \item {body\_\discretionary {-}{}{}buf}
+    \subitem {http\_\discretionary {-}{}{}response}, \hyperpage{7}
+
+  \indexspace
+
+  \item {cgi\_\discretionary {-}{}{}pattern}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{9}
+  \item {cgi\_\discretionary {-}{}{}query\_\discretionary {-}{}{}string}
+    \subitem {http\_\discretionary {-}{}{}request}, \hyperpage{5}
+  \item {cgi\_\discretionary {-}{}{}script}
+    \subitem {http\_\discretionary {-}{}{}request}, \hyperpage{5}
+  \item {clients\_\discretionary {-}{}{}fd}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{9}
+  \item {connection\_\discretionary {-}{}{}timeout}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{9}
+
+  \indexspace
+
+  \item {decoded\_\discretionary {-}{}{}uri}
+    \subitem {http\_\discretionary {-}{}{}response}, \hyperpage{7}
+  \item {default\_\discretionary {-}{}{}page}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{9}
+
+  \indexspace
+
+  \item {evbuffer}, \hyperpage{3}
+  \item {ext}
+    \subitem {mime\_\discretionary {-}{}{}entry}, \hyperpage{11}
+
+  \indexspace
+
+  \item {headers}
+    \subitem {http\_\discretionary {-}{}{}request}, \hyperpage{5}
+    \subitem {http\_\discretionary {-}{}{}response}, \hyperpage{7}
+  \item {hrequest}
+    \subitem {http\_\discretionary {-}{}{}response}, \hyperpage{7}
+  \item {hserver}
+    \subitem {http\_\discretionary {-}{}{}response}, \hyperpage{7}
+  \item {http\_\discretionary {-}{}{}header}, \hyperpage{4}
+    \subitem {name}, \hyperpage{4}
+    \subitem {TAILQ\_\discretionary {-}{}{}ENTRY}, \hyperpage{4}
+    \subitem {value}, \hyperpage{4}
+  \item {http\_\discretionary {-}{}{}request}, \hyperpage{5}
+    \subitem {cgi\_\discretionary {-}{}{}query\_\discretionary {-}{}{}string}, 
+		\hyperpage{5}
+    \subitem {cgi\_\discretionary {-}{}{}script}, \hyperpage{5}
+    \subitem {headers}, \hyperpage{5}
+    \subitem {is\_\discretionary {-}{}{}cgi}, \hyperpage{5}
+    \subitem {method}, \hyperpage{5}
+    \subitem {uri}, \hyperpage{5}
+    \subitem {version}, \hyperpage{5}
+  \item {http\_\discretionary {-}{}{}response}, \hyperpage{7}
+    \subitem {body\_\discretionary {-}{}{}buf}, \hyperpage{7}
+    \subitem {decoded\_\discretionary {-}{}{}uri}, \hyperpage{7}
+    \subitem {headers}, \hyperpage{7}
+    \subitem {hrequest}, \hyperpage{7}
+    \subitem {hserver}, \hyperpage{7}
+    \subitem {req\_\discretionary {-}{}{}uri}, \hyperpage{7}
+    \subitem {status\_\discretionary {-}{}{}code}, \hyperpage{7}
+    \subitem {status\_\discretionary {-}{}{}msg}, \hyperpage{8}
+    \subitem {type}, \hyperpage{8}
+    \subitem {version}, \hyperpage{8}
+  \item {http\_\discretionary {-}{}{}server}, \hyperpage{9}
+    \subitem {cgi\_\discretionary {-}{}{}pattern}, \hyperpage{9}
+    \subitem {clients\_\discretionary {-}{}{}fd}, \hyperpage{9}
+    \subitem {connection\_\discretionary {-}{}{}timeout}, \hyperpage{9}
+    \subitem {default\_\discretionary {-}{}{}page}, \hyperpage{9}
+    \subitem {list\_\discretionary {-}{}{}directory}, \hyperpage{9}
+    \subitem {log\_\discretionary {-}{}{}file}, \hyperpage{9}
+    \subitem {max\_\discretionary {-}{}{}connection}, \hyperpage{10}
+    \subitem {read\_\discretionary {-}{}{}set}, \hyperpage{10}
+    \subitem {root\_\discretionary {-}{}{}document}, \hyperpage{10}
+    \subitem {server\_\discretionary {-}{}{}ip}, \hyperpage{10}
+    \subitem {server\_\discretionary {-}{}{}name}, \hyperpage{10}
+    \subitem {server\_\discretionary {-}{}{}port}, \hyperpage{10}
+    \subitem {sock\_\discretionary {-}{}{}fd}, \hyperpage{10}
+    \subitem {state}, \hyperpage{10}
+
+  \indexspace
+
+  \item {is\_\discretionary {-}{}{}cgi}
+    \subitem {http\_\discretionary {-}{}{}request}, \hyperpage{5}
+
+  \indexspace
+
+  \item {list\_\discretionary {-}{}{}directory}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{9}
+  \item {log\_\discretionary {-}{}{}file}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{9}
+
+  \indexspace
+
+  \item {max\_\discretionary {-}{}{}connection}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{10}
+  \item {method}
+    \subitem {http\_\discretionary {-}{}{}request}, \hyperpage{5}
+  \item {mime\_\discretionary {-}{}{}entry}, \hyperpage{11}
+    \subitem {ext}, \hyperpage{11}
+    \subitem {type}, \hyperpage{11}
+
+  \indexspace
+
+  \item {name}
+    \subitem {http\_\discretionary {-}{}{}header}, \hyperpage{4}
+
+  \indexspace
+
+  \item {read\_\discretionary {-}{}{}set}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{10}
+  \item {req\_\discretionary {-}{}{}uri}
+    \subitem {http\_\discretionary {-}{}{}response}, \hyperpage{7}
+  \item {root\_\discretionary {-}{}{}document}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{10}
+
+  \indexspace
+
+  \item {server\_\discretionary {-}{}{}ip}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{10}
+  \item {server\_\discretionary {-}{}{}name}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{10}
+  \item {server\_\discretionary {-}{}{}port}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{10}
+  \item {sock\_\discretionary {-}{}{}fd}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{10}
+  \item {state}
+    \subitem {http\_\discretionary {-}{}{}server}, \hyperpage{10}
+  \item {status\_\discretionary {-}{}{}code}
+    \subitem {http\_\discretionary {-}{}{}response}, \hyperpage{7}
+  \item {status\_\discretionary {-}{}{}msg}
+    \subitem {http\_\discretionary {-}{}{}response}, \hyperpage{8}
+
+  \indexspace
+
+  \item {TAILQ\_\discretionary {-}{}{}ENTRY}
+    \subitem {http\_\discretionary {-}{}{}header}, \hyperpage{4}
+  \item {type}
+    \subitem {http\_\discretionary {-}{}{}response}, \hyperpage{8}
+    \subitem {mime\_\discretionary {-}{}{}entry}, \hyperpage{11}
+
+  \indexspace
+
+  \item {uri}
+    \subitem {http\_\discretionary {-}{}{}request}, \hyperpage{5}
+
+  \indexspace
+
+  \item {value}
+    \subitem {http\_\discretionary {-}{}{}header}, \hyperpage{4}
+  \item {version}
+    \subitem {http\_\discretionary {-}{}{}request}, \hyperpage{5}
+    \subitem {http\_\discretionary {-}{}{}response}, \hyperpage{8}
+
+\end{theindex}

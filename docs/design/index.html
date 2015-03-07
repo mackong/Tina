@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Tina Design Document</title>
+</head>
+
+<body>
+<h1><span style="font-size: 26pt"><img alt="Tina" src="logo.png" width="129"
+height="67" /></span> <em><span style="font-size: 14pt">Tina is not
+apache</span></em> </h1>
+<hr />
+<ul>
+  <li><a href="#background">Project Background</a> </li>
+  <li><a href="#ideas">Design Ideas</a> </li>
+  <li><a href="#summary">Summary</a></li>
+</ul>
+<hr />
+
+<h2><a name="background">Project Background</a></h2>
+
+<p>Tina is just a personal challenge project for a job,here thanks to
+<strong>Sangfor</strong> company(<a
+href="http://www.sangfor.com.cn">www.sangfor.com.cn</a>).</p>
+
+<h2><a name="ideas">Design Ideas</a></h2>
+
+<p>Tina is designed to be a single-tasking HTTP server.it runs in a daemon
+process,wait for the HTTP request,process the request and return response
+info.This is show as the following figure.</p>
+
+<p><img alt="main" src="main.png" width="410" height="420" /></p>
+
+<p>When a web browser send a request.Tina create a new thread to process the
+request with follow steps:</p>
+<ul>
+  <li>read the request data.</li>
+  <li>parse initial line info(such as request method,request URI and so on) and
+    save these info.</li>
+  <li>parse request header and save these to header queue.</li>
+  <li>try to read optional body content if need.</li>
+  <li>return a new request object.</li>
+</ul>
+These can be show as follow figure. 
+
+<p><img alt="new request" src="new_request.png" width="484" height="535" /></p>
+
+<p>After generate a new request object,new created thread will pass the request
+object to create a new response object with follow steps:</p>
+<ul>
+  <li>check the validity of the request.</li>
+  <li>if it is a bad request 
+    <ul>
+      <li>just return BAD_REQUEST error message.</li>
+    </ul>
+  </li>
+  <li>if it is a valid request 
+    <ul>
+      <li>generate response line</li>
+      <li>generate response header</li>
+      <li>if it is a CGI request 
+        <ul>
+          <li>new a sub process to run CGI program,and write the output to the
+            browser by redirect.</li>
+        </ul>
+      </li>
+      <li>if it is not a CGI request 
+        <ul>
+          <li>read the request uri resource,write the content to the browser to
+            the browser directly</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>These can be show as follow figure.</p>
+
+<p><img alt="new response" src="new_response.png" width="576" height="632"
+/></p>
+
+<p>After all steps before,Tina finished a browser request,and the new created
+thread will be exit.</p>
+
+<p>Tina run in a infinite loop to listen browser request and process as
+before.</p>
+
+<h2><a name="summary">Summary</a></h2>
+This is just a simple description about the simple Tina.
+<strong>KISS</strong>,I think this is right.Thank you! 
+<hr />
+Last update: 1 May, 2012 <br />
+<a href="mailto:mackonghp@gmail.com">MacKong</a> </body>
+</html>

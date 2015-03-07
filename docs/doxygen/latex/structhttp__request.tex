@@ -1,0 +1,71 @@
+\hypertarget{structhttp__request}{
+\section{http\_\-request Struct Reference}
+\label{structhttp__request}\index{http\_\-request@{http\_\-request}}
+}
+
+
+{\ttfamily \#include $<$request.h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+enum req\_\-method \hyperlink{structhttp__request_a9c335e7e58b388eebbc47566bac7ccf8}{method}
+\item 
+char $\ast$ \hyperlink{structhttp__request_a4e9a04ec2dbeaa73b61021d4ef643e46}{uri}
+\item 
+char $\ast$ \hyperlink{structhttp__request_afe666e8ccf16d468d71ec116914d6432}{version}
+\item 
+struct http\_\-header\_\-head $\ast$ \hyperlink{structhttp__request_a93e4704948ed590362fe6c109a548174}{headers}
+\item 
+int \hyperlink{structhttp__request_a539af9f5712d370caf999c9507cf4302}{is\_\-cgi}
+\item 
+char $\ast$ \hyperlink{structhttp__request_a1bdae16cb3c4e415fbdc0f1038f0d4ca}{cgi\_\-script}
+\item 
+char $\ast$ \hyperlink{structhttp__request_a7921955f2c90460106baa8989aba0444}{cgi\_\-query\_\-string}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+http request 
+
+\subsection{Member Data Documentation}
+\hypertarget{structhttp__request_a7921955f2c90460106baa8989aba0444}{
+\index{http\_\-request@{http\_\-request}!cgi\_\-query\_\-string@{cgi\_\-query\_\-string}}
+\index{cgi\_\-query\_\-string@{cgi\_\-query\_\-string}!http_request@{http\_\-request}}
+\subsubsection[{cgi\_\-query\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-request::cgi\_\-query\_\-string}}}
+\label{structhttp__request_a7921955f2c90460106baa8989aba0444}
+cgi query string \hypertarget{structhttp__request_a1bdae16cb3c4e415fbdc0f1038f0d4ca}{
+\index{http\_\-request@{http\_\-request}!cgi\_\-script@{cgi\_\-script}}
+\index{cgi\_\-script@{cgi\_\-script}!http_request@{http\_\-request}}
+\subsubsection[{cgi\_\-script}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-request::cgi\_\-script}}}
+\label{structhttp__request_a1bdae16cb3c4e415fbdc0f1038f0d4ca}
+cgi script \hypertarget{structhttp__request_a93e4704948ed590362fe6c109a548174}{
+\index{http\_\-request@{http\_\-request}!headers@{headers}}
+\index{headers@{headers}!http_request@{http\_\-request}}
+\subsubsection[{headers}]{\setlength{\rightskip}{0pt plus 5cm}struct http\_\-header\_\-head$\ast$ {\bf http\_\-request::headers}}}
+\label{structhttp__request_a93e4704948ed590362fe6c109a548174}
+http headers queue \hypertarget{structhttp__request_a539af9f5712d370caf999c9507cf4302}{
+\index{http\_\-request@{http\_\-request}!is\_\-cgi@{is\_\-cgi}}
+\index{is\_\-cgi@{is\_\-cgi}!http_request@{http\_\-request}}
+\subsubsection[{is\_\-cgi}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf http\_\-request::is\_\-cgi}}}
+\label{structhttp__request_a539af9f5712d370caf999c9507cf4302}
+is cgi request or not \hypertarget{structhttp__request_a9c335e7e58b388eebbc47566bac7ccf8}{
+\index{http\_\-request@{http\_\-request}!method@{method}}
+\index{method@{method}!http_request@{http\_\-request}}
+\subsubsection[{method}]{\setlength{\rightskip}{0pt plus 5cm}enum req\_\-method {\bf http\_\-request::method}}}
+\label{structhttp__request_a9c335e7e58b388eebbc47566bac7ccf8}
+req\_\-method \hypertarget{structhttp__request_a4e9a04ec2dbeaa73b61021d4ef643e46}{
+\index{http\_\-request@{http\_\-request}!uri@{uri}}
+\index{uri@{uri}!http_request@{http\_\-request}}
+\subsubsection[{uri}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-request::uri}}}
+\label{structhttp__request_a4e9a04ec2dbeaa73b61021d4ef643e46}
+resource uri \hypertarget{structhttp__request_afe666e8ccf16d468d71ec116914d6432}{
+\index{http\_\-request@{http\_\-request}!version@{version}}
+\index{version@{version}!http_request@{http\_\-request}}
+\subsubsection[{version}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf http\_\-request::version}}}
+\label{structhttp__request_afe666e8ccf16d468d71ec116914d6432}
+http version HTTP/x.x 
+
+The documentation for this struct was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+request.h\end{DoxyCompactItemize}
